@@ -16,12 +16,12 @@ if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["subject"]) &
     $mail->isSMTP();
     $mail->Host ='smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'for.udayraj@gmail.com';
-    $mail->Password = 'hjktzjghgpzvbvtc';
+    $mail->Username = 'enter your gmail';
+    $mail->Password = 'enter your app password';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
     $mail->CharSet = 'utf-8';
-    $mail->setFrom("for.udayraj@gmail.com");
+    $mail->setFrom("enter your gamil");
     $mail->addAddress($email);
     $mail->addReplyTo('reply@example.com', 'Reply Name');
     $mail->addCC('cc@example.com');
